@@ -1,9 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { HttpModule } from '@angular/http';
+
 // rutas
 
 import { app_routintg } from './app.routes';
+// services
+
+import {  InformationService } from './services/information.service';
+
 // compoenntes
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -24,9 +30,12 @@ import { ItemComponent } from './components/item/item.component';
   ],
   imports: [
     BrowserModule,
-    app_routintg
+    app_routintg,
+    HttpModule
   ],
-  providers: [],
+  providers: [
+    InformationService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
