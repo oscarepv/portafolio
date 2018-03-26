@@ -9,7 +9,7 @@ import { app_routintg } from './app.routes';
 // services
 
 import {  InformationService } from './services/information.service';
-
+import {  ProductosService } from './services/productos.service';
 // compoenntes
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -17,6 +17,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PortafolioComponent } from './components/portafolio/portafolio.component';
 import { AboutComponent } from './components/about/about.component';
 import { ItemComponent } from './components/item/item.component';
+import { SearchComponent } from './components/search/search.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { ItemComponent } from './components/item/item.component';
     FooterComponent,
     PortafolioComponent,
     AboutComponent,
-    ItemComponent
+    ItemComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,8 @@ import { ItemComponent } from './components/item/item.component';
     HttpModule
   ],
   providers: [
-    InformationService
+    InformationService,
+    ProductosService
   ],
   bootstrap: [AppComponent]
 })

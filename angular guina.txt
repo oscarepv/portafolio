@@ -1,0 +1,15 @@
+git config --global alias.lg "log --oneline --decorate --all --graph"
+git config --global alias.s "status -s"
+
+ng g c components/nombreComponente --spec false -is
+
+git checkout -- .
+
+ng g s services/nombreServicio
+
+
+frase
+nombre
+subtitulo
+twitter
+url
