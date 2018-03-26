@@ -28,7 +28,7 @@ private filtrar_productos(termino: string){
     // corregir busqueda
     if( prod.categoria == termino ){
       this.productosFiltrado.push(prod);
-      console.log(prod);
+    //  console.log(prod);
     }
     // console.log(prod);
   });

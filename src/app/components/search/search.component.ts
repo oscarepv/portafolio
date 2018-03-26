@@ -9,7 +9,7 @@ import { ProductosService } from '../../services/productos.service';
 export class SearchComponent implements OnInit {
   termino: string ;
   constructor(private _route: ActivatedRoute,
-              private _ps: ProductosService) {
+              public _ps: ProductosService) {
       _route.params.subscribe(parametros =>{
         this.termino = parametros['termino'];
         console.log(this.termino);

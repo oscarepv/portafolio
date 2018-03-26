@@ -16,7 +16,7 @@ export class ItemComponent implements OnInit {
       .subscribe(res => {
         this.producto = res.json();
         this.codigo = parametros['id'];
-        console.log(this.producto);
+        // console.log(this.producto);
       });
     })
    }
